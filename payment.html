@@ -83,25 +83,169 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="delivery-details">
-                        <h5 class="title"> <span class="number mr-3">1</span>
-                            Delivery Details
+                    <form>
+                        <div class="delivery-details">
+                            <h5 class="title"> <span class="number mr-3">1</span>
+                                Delivery Details
+                            </h5>
+
+                            <div class="contactless-delivery mt-4 position-relative">
+                                <h6 class="tagline-title">Contactless Delivery</h6>
+                                <span class="tagline">To Keep you safe, the rider will place your order at your
+                                    door</span>
+
+                                <!-- switch -->
+                                <div class="switch-position">
+                                    <label class="switch mx-3">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- input -->
+                            <label class="title d-block my-4">
+                                Delivery time
+                            </label>
+                            <input type="date" class="form-control delivery-input">
+                            <label class="title d-block my-4">
+                                Delivery time
+                            </label>
+                            <textarea class="form-control delivery-input" rows="5">
+                            </textarea>
+
+                            <!-- personal details -->
+                            <h5 class="title mt-4"> <span class="number mr-3">1</span>
+                                Persoanl Details
+                            </h5>
+
+                            <label class="title d-block my-4">
+                                Name
+                            </label>
+                            <input type="text" class="form-control delivery-input">
+                            <label class="title d-block my-4">
+                                Mobile number
+                            </label>
+                            <input type="number" class="form-control delivery-input">
+
+                        </div>
+                    </form>
+                    <div class="delivery-details mt-50">
+                        <h5 class="title"> <span class="number mr-3">2</span>
+                            payment
                         </h5>
 
-                        <div class="contactless-delivery mt-4 position-relative">
-                            <h6 class="tagline-title">Contactless Delivery</h6>
-                            <span class="tagline">To Keep you safe, the rider will place your order at your door</span>
 
-                            <div class="switch-position">
-                                <label class="switch mx-3">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
+
+
+
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            credit/debit card
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        paypal
+                                    </div>
+                                </div>
                             </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            cash
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <button class="btn1">pay by cash</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            bikash
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <button class="btn1">pay by bkash</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="order-info pt-60">
+
+
+                        <!-- order content -->
+                        <h5 class="title mt-4 text-center">Your order from Food Khan-Online</h5>
+
+
+                        <div class="inner-box payment-inner-box">
+                            <div class="d-flex justify-content-between mt-4">
+                                <h5 class="text-red mr-4 title">1x Regular Burger</h5>
+                                <h5 class="title">TK 98.00</h5>
+                            </div>
+                        </div>
+
+                        <div class="inner-box payment-inner-box">
+                            <div class="d-flex justify-content-between mt-3">
+                                <h5 class="title  mr-4 ">subtotal</h5>
+                                <h5 class="title">TK 100.00</h5>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <h5 class="title  mr-4 ">Delivery fee</h5>
+                                <h5 class="title">Free</h5>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <h5 class="title mr-4 ">Total(Inc Vat)</h5>
+                                <h5 class="title">TK 100.00</h5>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4"></div>
             </div>
         </div>
     </div>

@@ -410,6 +410,12 @@
     width: 32%;
     margin-left: auto;
     margin-right: auto;
+    &.payment-inner-box {
+      width: 80%;
+      @include screen-1200 {
+        width: 90%;
+      }
+    }
     @include screen-1200 {
       width: 70%;
     }
@@ -535,4 +541,10 @@ input:checked + .slider:before {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+
+.delivery-input {
+  border: 1px solid $pink-lite;
+  width: 100%;
+  padding: 8px 20px;
 }
