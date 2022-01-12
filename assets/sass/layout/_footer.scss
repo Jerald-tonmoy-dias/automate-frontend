@@ -1,0 +1,113 @@
+/* Footer Section */
+.footer-area {
+  overflow: hidden;
+  padding-top: 90px;
+
+  .foo_top {
+    .foo-widget {
+      margin-bottom: 30px;
+      // wtsapp
+      .wtsapp {
+        color: #4fdb83;
+        font-size: 22px;
+      }
+      .number {
+        font-family: $raleway;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      // title
+      .title {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      // footer logo
+      .logo {
+        width: 200px;
+        position: relative;
+        z-index: 999;
+        margin-bottom: 30px;
+
+        @include portrait-phone {
+          width: 100px;
+        }
+      }
+
+      .clients-counter {
+        font-size: 36px;
+        font-family: $raleway;
+        color: $red-color;
+        font-weight: 700;
+      }
+
+      .social-links {
+        a {
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: initial;
+          }
+
+          span {
+            color: $black-color;
+            display: inline-block;
+            transition: $transition;
+            &.active {
+              color: $red-color;
+            }
+            &:hover {
+              color: $red-color;
+            }
+          }
+        }
+      }
+
+      ul {
+        li {
+          line-height: 2;
+          text-transform: capitalize;
+          display: flex;
+
+          span {
+            margin-right: 10px;
+            display: inline-block;
+          }
+
+          a {
+            color: $black-color;
+
+            &:hover {
+              color: $red-color;
+            }
+          }
+
+          img {
+            width: inherit;
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .foo_btm {
+    .copyright-text {
+      text-align: center;
+      padding: 20px 0;
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+
+        a {
+          color: $black-color;
+          &:hover {
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+}

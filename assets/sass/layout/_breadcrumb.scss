@@ -1,0 +1,52 @@
+/* Breadcrumb Section */
+.breadcrumb-section {
+  padding-top: 370px !important;
+  padding-bottom: 370px !important;
+  position: relative;
+  @include desktop {
+    padding-top: 250px !important;
+    padding-bottom: 250px !important;
+  }
+  @include mobile-device {
+    padding-top: 250px !important;
+    padding-bottom: 250px !important;
+  }
+
+  @include portrait-phone {
+    padding-top: 210px !important;
+    padding-bottom: 115px !important;
+  }
+  .vecc1 {
+    position: absolute;
+    top: 27%;
+    right: 0%;
+    width: 26%;
+    @include screen-1920 {
+      opacity: 0.5;
+    }
+  }
+  .vecc2 {
+    position: absolute;
+    top: 15%;
+    right: 23%;
+    width: 11%;
+    @include screen-1920 {
+      opacity: 0.5;
+    }
+  }
+  .vec5 {
+    width: initial;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    @include screen-1920 {
+      opacity: 0.5;
+    }
+    @include desktop {
+      width: 25%;
+    }
+    @include mobile-device {
+      display: none;
+    }
+  }
+}

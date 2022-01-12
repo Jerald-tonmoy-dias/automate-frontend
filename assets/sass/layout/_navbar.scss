@@ -1,0 +1,161 @@
+/* Navbar */
+nav {
+  display: flex !important;
+  justify-content: flex-end;
+
+  .main-menu {
+    li {
+      display: inline-block;
+      position: relative;
+      margin-right: 42px;
+      line-height: 1.7;
+      z-index: 5;
+
+      @include desktop {
+        margin-right: 20px;
+      }
+
+      &.current {
+        a {
+          &::before {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      &.has-submenu {
+        &::after {
+          content: "\f078";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: $black-color;
+          font-size: 10px;
+          margin-left: 5px;
+          transition: $transition;
+
+          @include mobile-device {
+            display: none;
+          }
+        }
+      }
+
+      a {
+        color: $black-color;
+        padding: 25px 0;
+        font-weight: 500;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+
+      @include large-device {
+        // submenu
+        .submenu {
+          position: absolute;
+          border-top: 2px solid $white-color;
+          border-radius: 5px;
+          width: 220px;
+          top: 110%;
+          left: 0;
+          background: $red-color;
+          padding: 10px;
+          opacity: 0;
+          visibility: hidden;
+          transition: $transition;
+
+          li {
+            display: block;
+            margin-right: initial;
+
+            a {
+              color: $white-color;
+              display: block;
+              padding: 6px;
+              width: 100%;
+            }
+          }
+        }
+
+        &:hover {
+          &.has-submenu {
+            &::after {
+              color: $red-color;
+            }
+          }
+
+          a {
+            color: $red-color;
+          }
+
+          .submenu {
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    // home 2 main menu
+    &.main-menu2 {
+      li {
+        &.has-submenu {
+          &::after {
+            content: "\f078";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: $black-color;
+            font-size: 10px;
+            margin-left: 5px;
+
+            @include mobile-device {
+              display: none;
+            }
+          }
+        }
+
+        @include large-device {
+          &:hover {
+            &.has-submenu {
+              &::after {
+                color: $red-color;
+              }
+            }
+
+            a {
+              color: $red-color;
+            }
+          }
+
+          .submenu {
+            background: $red-color;
+
+            li {
+              a {
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-wrapper {
+  position: relative;
+}
+
+// mobile menu
+.mean-container {
+  .mean-bar {
+    @include sm-device {
+      top: 18px;
+    }
+  }
+  // home 1 main menu
+  .mean-nav {
+    background: $red-color;
+  }
+}
