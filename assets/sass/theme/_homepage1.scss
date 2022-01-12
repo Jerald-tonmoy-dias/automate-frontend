@@ -293,7 +293,11 @@
 
 // divider wrapper
 .divider-wrapper {
-  padding-top: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include portrait-phone {
+    padding-top: 160px;
+  }
 }
 // banner section
 .red-badge {
@@ -363,6 +367,9 @@
     position: relative;
     width: 48.7069%;
     margin-top: 20px;
+    @include sm-device {
+      width: 98.7069%;
+    }
 
     .title {
       font-family: $raleway;
@@ -380,70 +387,6 @@
   box-shadow: 0px 5px 20px 0px rgba(232, 45, 52, 0.1);
   height: 100%;
   padding-bottom: 60px;
-
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-  }
-
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    background: $white-color;
-    border: 1px solid $red-color;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 0px;
-    bottom: 0px;
-    background-color: $red-color;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  input:checked + .slider {
-    background-color: $red-color;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px $red-color;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(38px);
-    -ms-transform: translateX(38px);
-    transform: translateX(38px);
-    background: $white-color;
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
   .title {
     font-family: $roboto;
     font-weight: 500;
@@ -483,4 +426,113 @@
     margin-right: auto;
     background-color: $red-color;
   }
+}
+// custome switch button
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: $white-color;
+  border: 1px solid $red-color;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: 0px;
+  background-color: $red-color;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $red-color;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $red-color;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+  background: $white-color;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+// payment style
+.payment-wrapper {
+  padding-top: 150px;
+}
+.delivery-details {
+  padding: 40px 30px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 20px 0px rgba(232, 45, 52, 0.1);
+
+  .title {
+    .number {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 5px;
+      background: $red-color;
+      color: $white-color;
+      font-weight: 500;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+}
+
+.contactless-delivery {
+  padding: 30px;
+  background: $pink-lite;
+  border-radius: 10px;
+  .tagline-title {
+    font-family: $raleway;
+    font-weight: 600;
+  }
+  .tagline {
+    font-size: 14px;
+  }
+}
+
+.switch-position {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
