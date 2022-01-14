@@ -46,10 +46,18 @@
     width: 200px;
     padding: 10px;
     border-radius: 10px;
-    background: $white-color;
+    background: $red-color;
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
+
+    .link {
+      transition: 0.3s;
+      color: $white-color;
+      &:hover {
+        color: $pink-lite;
+      }
+    }
   }
 
   &:hover {
