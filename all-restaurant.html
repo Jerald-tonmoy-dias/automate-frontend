@@ -48,11 +48,15 @@
                 <div class="col-12 col-sm-8 col-md-8">
                     <ul class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center">
                         <!-- language switcher -->
-                        <li class="language-swithcer upper-menu-list">
+                        <!-- <li class="language-swithcer upper-menu-list">
                             <a class="text-uppercase link active" href="#">en</a>
                             <span>|</span>
                             <a class="text-uppercase link" href="#">bn</a>
-                        </li>
+                        </li> -->
+                        <select class="language-swithcer upper-menu-list">
+                            <option value="1">en</option>
+                            <option value="2">bn</option>
+                        </select>
                         <!-- separator -->
                         <span class="menu-divider">|</span>
                         <!-- profile -->
@@ -80,7 +84,33 @@
     </header>
 
     <!-- hero section -->
-    <div class="hero-section breadcrumb-section" style="background-image: url('./assets/images/bg2.png');">
+    <div class="hero-section" style="background-image: url('./assets/images/bg1.png');">
+        <img src="assets/images/hero-img1.png" class="main-hero-img" alt="">
+        <img src="assets/images/hvec1.png" class="vec1 item-bounce" alt="">
+        <img src="assets/images/hvec2.png" class="vec2" alt="">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <div class="hero-content">
+                        <h2 class="editable title" data-cid="0" tabindex="1">
+                            It's The Food And Groceries You Love, Delivered
+                        </h2>
+
+                        <form action="">
+                            <div class="address-wrapper d-flex align-items-center  mt-30">
+                                <label for="addrs" class="label">Enter your full address</label>
+                                <input id="addrs" type="text" class="form-control address-inpute"
+                                    placeholder="7 Shah Makhdum Ave Dhaka">
+                                <button class='btn1 adrs-btn editable' data-cid="1" tabindex="1">delivery</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="hero-section breadcrumb-section" style="background-image: url('./assets/images/bg2.png');">
         <img src="assets/images/hero-img5.png" class="vec5" alt="">
         <div class="container">
             <div class="row justify-content-center">
@@ -109,7 +139,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- brand -->
     <div class="brand-section cities-brand-section">
@@ -691,8 +721,20 @@
     <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/placeholderTypewriter.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#addrs').placeholderTypewriter({ text: ["Where would you like to go?", "Amsterdam?", "Paris?", "Berlin?", "London?", "New York?", "San Francisco?"] });
+        $('#addrs').placeholderTypewriter({
+            // delay between characters
+            delay: 50,
+            // delay between text
+            pause: 1000,
+        });
+    </script>
 </body>
 
 </html>

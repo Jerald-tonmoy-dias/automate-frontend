@@ -254,9 +254,10 @@
             $grid.isotope({ filter: filterValue });
         });
 
-
-
-
+        // nice select
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
 
         // end point
     });
