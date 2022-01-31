@@ -1,364 +1,322 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Page Title -->
-    <title>Automatefood - payment page</title>
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="favicon.png" />
+  <!-- Page Title -->
+  <title>Automatefood - payment page</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awsome-all.min.css" />
-    <link rel="stylesheet" href="assets/css/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/icofont.min.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
-    <link rel="stylesheet" href="assets/css/slick.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="favicon.png" />
 
-  <body>
-    <!-- Preloader Starts -->
-    <div class="preloader" id="preloader">
-      <div class="preloader-inner">
-        <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awsome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/flaticon.css" />
+  <link rel="stylesheet" href="assets/css/icofont.min.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/css/meanmenu.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Preloader Starts -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="header-area">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-12 col-sm-4 col-md-4 mb-4 mb-sm-0 d-flex justify-content-center justify-content-sm-start">
+          <img src="assets/images/logo.png" class="logo" alt="">
+        </div>
+        <div class="col-12 col-sm-8 col-md-8">
+          <ul class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center">
+            <select class="language-swithcer upper-menu-list">
+              <option value="1">EN</option>
+              <option value="2">BN</option>
+            </select>
+            <!-- separator -->
+            <span class="menu-divider">|</span>
+            <!-- profile -->
+            <li class="has-submenu upper-menu-list">
+              <span class="user-icon"><i class="fas fa-user"></i></span>
+              <a class="link" href="#">Tonmoy</a>
+              <ul class="submenu">
+                <li><a class="link" href="#">menu 1</a></li>
+                <li><a class="link" href="#">menu 2</a></li>
+                <li><a class="link" href="#">menu 3</a></li>
+              </ul>
+            </li>
+            <!-- separator -->
+            <span class="menu-divider">|</span>
+            <!-- cart option -->
+            <li class="upper-menu-list"> <a href="#" class="link position-relative">
+                <span class="cart_counter">0</span>
+                <i class="fas fa-shopping-basket"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- header -->
-    <header class="header-area">
-      <div class="container-fluid">
-        <div class="row justify-content-between">
-          <div
-            class="col-12 col-sm-4 col-md-4 mb-4 mb-sm-0 d-flex justify-content-center justify-content-sm-start"
-          >
-            <img src="assets/images/logo.png" class="logo" alt="" />
-          </div>
-          <div class="col-12 col-sm-8 col-md-8">
-            <ul
-              class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center"
-            >
-              <!-- language switcher -->
-              <li class="language-swithcer upper-menu-list">
-                <a class="text-uppercase link active" href="#">en</a>
-                <span>|</span>
-                <a class="text-uppercase link" href="#">bn</a>
-              </li>
-              <!-- separator -->
-              <span class="menu-divider">|</span>
-              <!-- profile -->
-              <li class="has-submenu upper-menu-list">
-                <span class="user-icon"><i class="fas fa-user"></i></span>
-                <a class="link" href="#">Tonmoy</a>
-                <ul class="submenu">
-                  <li><a class="link" href="#">abc</a></li>
-                  <li><a class="link" href="#">abc</a></li>
-                  <li><a class="link" href="#">abc</a></li>
-                </ul>
-              </li>
-              <!-- separator -->
-              <span class="menu-divider">|</span>
-              <!-- cart option -->
-              <li class="upper-menu-list">
-                <a href="#" class="link position-relative">
-                  <span class="cart_counter">0</span>
-                  <i class="fas fa-shopping-basket"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+  <div class="payment-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <form>
+            <div class="delivery-details">
+              <h5 class="title">
+                <span class="number mr-3">1</span>
+                Delivery Details
+              </h5>
 
-    <div class="payment-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <form>
-              <div class="delivery-details">
-                <h5 class="title">
-                  <span class="number mr-3">1</span>
-                  Delivery Details
-                </h5>
+              <div class="contactless-delivery mt-4 position-relative">
+                <h6 class="tagline-title">Contactless Delivery</h6>
+                <span class="tagline">To Keep you safe, the rider will place your order at your
+                  door</span>
 
-                <div class="contactless-delivery mt-4 position-relative">
-                  <h6 class="tagline-title">Contactless Delivery</h6>
-                  <span class="tagline"
-                    >To Keep you safe, the rider will place your order at your
-                    door</span
-                  >
-
-                  <!-- switch -->
-                  <div class="switch-position">
-                    <label class="switch mx-3">
-                      <input type="checkbox" />
-                      <span class="slider round"></span>
-                    </label>
-                  </div>
+                <!-- switch -->
+                <div class="switch-position">
+                  <label class="switch mx-3">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
                 </div>
+              </div>
 
-                <!-- input -->
-                <label class="title d-block my-4"> Delivery time </label>
-                <input type="date" class="form-control delivery-input" />
-                <label class="title d-block my-4"> Delivery time </label>
-                <textarea class="form-control delivery-input" rows="5">
+              <!-- input -->
+              <label class="title d-block my-4"> Delivery time </label>
+
+              <input data-toggle="datepicker" class="form-control delivery-input">
+
+
+              <!-- <input type="date" class="form-control delivery-input" /> -->
+              <label class="title d-block my-4"> Delivery time </label>
+              <textarea class="form-control delivery-input" rows="5">
                 </textarea>
 
-                <!-- personal details -->
-                <h5 class="title mt-4">
-                  <span class="number mr-3">1</span>
-                  Persoanl Details
-                </h5>
-
-                <label class="title d-block my-4"> Name </label>
-                <input type="text" class="form-control delivery-input" />
-                <label class="title d-block my-4"> Mobile number </label>
-                <input type="number" class="form-control delivery-input" />
-              </div>
-            </form>
-            <div class="delivery-details mt-50">
-              <h5 class="title">
-                <span class="number mr-3 mb-30">2</span>
-                payment
+              <!-- personal details -->
+              <h5 class="title mt-4">
+                <span class="number mr-3">1</span>
+                Persoanl Details
               </h5>
-              <div id="accordion" class="payment-accordion">
-                <a
-                  class="payment-title"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  credit/debit card
+
+              <label class="title d-block my-4"> Name </label>
+              <input type="text" class="form-control delivery-input" />
+              <label class="title d-block my-4"> Mobile number </label>
+              <input type="number" class="form-control delivery-input" />
+            </div>
+          </form>
+          <div class="delivery-details mt-50">
+            <h5 class="title">
+              <span class="number mr-3 mb-30">2</span>
+              payment
+            </h5>
+            <div id="accordion" class="payment-accordion">
+              <a class="payment-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne">
+                credit/debit card
+              </a>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="payment-content">paypal</div>
+              </div>
+
+              <div>
+                <a class="payment-title collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  cash
                 </a>
 
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordion"
-                >
-                  <div class="payment-content">paypal</div>
-                </div>
-
-                <div>
-                  <a
-                    class="payment-title collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    cash
-                  </a>
-
-                  <div
-                    id="collapseTwo"
-                    class="collapse"
-                    aria-labelledby="headingTwo"
-                    data-parent="#accordion"
-                  >
-                    <div class="payment-content">
-                      <h6 class="title">PAY BY CASH</h6>
-                      <span class="content">
-                        Consider payment upon ordering for contactless delivery.
-                        You can't pay by a card to the rider upon delivery.
-                      </span>
-                    </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="payment-content">
+                    <h6 class="title">PAY BY CASH</h6>
+                    <span class="content">
+                      Consider payment upon ordering for contactless delivery.
+                      You can't pay by a card to the rider upon delivery.
+                    </span>
                   </div>
                 </div>
-                <div>
-                  <a
-                    class="payment-title collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    <span class="text-red">
-                      <i class="fas fa-dove"></i>bKash</span
-                    >
-                  </a>
+              </div>
+              <div>
+                <a class="payment-title collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  <span class="text-red">
+                    <i class="fas fa-dove"></i>bKash</span>
+                </a>
 
-                  <div
-                    id="collapseThree"
-                    class="collapse"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordion"
-                  >
-                    <div class="payment-content">
-                      <button class="btn1">pay by bkash</button>
-                    </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="payment-content">
+                    <button class="btn1">pay by bkash</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="order-info pt-60">
-              <!-- order content -->
-              <h5 class="title mt-4 text-center">
-                Your order from Food Khan-Online
-              </h5>
+        </div>
+        <div class="col-lg-4">
+          <div class="order-info pt-60">
+            <!-- order content -->
+            <h5 class="title mt-4 text-center">
+              Your order from Food Khan-Online
+            </h5>
 
-              <div class="inner-box payment-inner-box">
-                <div class="d-flex justify-content-between mt-4">
-                  <h5 class="text-red mr-4 title">1x Regular Burger</h5>
-                  <h5 class="title">TK 98.00</h5>
-                </div>
+            <div class="inner-box payment-inner-box">
+              <div class="d-flex justify-content-between mt-4">
+                <h5 class="text-red mr-4 title">1x Regular Burger</h5>
+                <h5 class="title">TK 98.00</h5>
               </div>
+            </div>
 
-              <div class="inner-box payment-inner-box">
-                <div class="d-flex justify-content-between mt-3">
-                  <h5 class="title mr-4">subtotal</h5>
-                  <h5 class="title">TK 100.00</h5>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                  <h5 class="title mr-4">Delivery fee</h5>
-                  <h5 class="title">Free</h5>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                  <h5 class="title mr-4">Total(Inc Vat)</h5>
-                  <h5 class="title">TK 100.00</h5>
-                </div>
+            <div class="inner-box payment-inner-box">
+              <div class="d-flex justify-content-between mt-3">
+                <h5 class="title mr-4">subtotal</h5>
+                <h5 class="title">TK 100.00</h5>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <h5 class="title mr-4">Delivery fee</h5>
+                <h5 class="title">Free</h5>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <h5 class="title mr-4">Total(Inc Vat)</h5>
+                <h5 class="title">TK 100.00</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- footer area -->
-    <footer>
-      <div class="footer-area">
-        <div class="foo_top">
-          <div class="foo_top_shapes">
-            <img src="assets/images/foo-vec.png" alt="" class="vec1" />
-          </div>
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div class="foo-widget">
-                  <div class="logo">
-                    <a href="index.html">
-                      <img src="assets/images/logo.png" alt=""
-                    /></a>
-                  </div>
-                  <span class="clients-counter">500+</span>
-                  <p class="editable" data-cid="38" tabindex="1">
-                    Satisfied Clients Worldwide
-                  </p>
-                  <div class="social-links">
-                    <a href="#"
-                      ><span class="active"
-                        ><i class="icofont-facebook"></i></span
-                    ></a>
-
-                    <a href="#"
-                      ><span><i class="icofont-twitter"></i></span
-                    ></a>
-
-                    <a href="#"
-                      ><span><i class="icofont-instagram"></i></span
-                    ></a>
-
-                    <a href="#"
-                      ><span><i class="icofont-pinterest"></i></span
-                    ></a>
-                  </div>
+  <!-- footer area -->
+  <footer>
+    <div class="footer-area">
+      <div class="foo_top">
+        <div class="foo_top_shapes">
+          <img src="assets/images/foo-vec.png" alt="" class="vec1" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".2s">
+              <div class="foo-widget">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" /></a>
                 </div>
-              </div>
-              <div
-                class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div class="foo-widget">
-                  <h6 class="mb-20 title editable" data-cid="39" tabindex="1">
-                    Information
-                  </h6>
-                  <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">privacy and policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp"
-                data-wow-delay=".8s"
-              >
-                <div class="foo-widget">
-                  <h6 class="mb-20 title editable" data-cid="40" tabindex="1">
-                    support
-                  </h6>
-                  <ul>
-                    <li class="number">
-                      <span class="wtsapp">
-                        <i class="fab fa-whatsapp-square"></i>
-                      </span>
-                      +8801677-701493
-                    </li>
-                    <li class="fw-500">website</li>
-                    <li>softtechitsupport.com</li>
-                    <li class="fw-500">email address</li>
-                    <li class="d-flex align-items-center">
-                      <i class="fas fa-envelope-open-text mr-4"></i>
-                      support@softtechit.com
-                    </li>
-                  </ul>
+                <span class="clients-counter">500+</span>
+                <p class="editable" data-cid="38" tabindex="1">
+                  Satisfied Clients Worldwide
+                </p>
+                <div class="social-links">
+                  <a href="#"><span class="active"><i class="icofont-facebook"></i></span></a>
+
+                  <a href="#"><span><i class="icofont-twitter"></i></span></a>
+
+                  <a href="#"><span><i class="icofont-instagram"></i></span></a>
+
+                  <a href="#"><span><i class="icofont-pinterest"></i></span></a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="foo_btm">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12">
-                <div class="copyright-text">
-                  <span class="editable" data-cid="7" tabindex="1">
-                    Copyright &copy; 2022 <a href="#"><b>Automatefood</b></a>
-                  </span>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+              <div class="foo-widget">
+                <h6 class="mb-20 title editable" data-cid="39" tabindex="1">
+                  Information
+                </h6>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">service</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">privacy and policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+              <div class="foo-widget">
+                <h6 class="mb-20 title editable" data-cid="40" tabindex="1">
+                  support
+                </h6>
+                <ul>
+                  <li class="number">
+                    <span class="wtsapp">
+                      <i class="fab fa-whatsapp-square"></i>
+                    </span>
+                    +8801677-701493
+                  </li>
+                  <li class="fw-500">website</li>
+                  <li>softtechitsupport.com</li>
+                  <li class="fw-500">email address</li>
+                  <li class="d-flex align-items-center">
+                    <i class="fas fa-envelope-open-text mr-4"></i>
+                    support@softtechit.com
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="foo_btm">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="copyright-text">
+                <span class="editable" data-cid="7" tabindex="1">
+                  Copyright &copy; 2022 <a href="#"><b>Automatefood</b></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- scroll to up -->
+  <div class="scrollup"><i class="fas fa-angle-double-up"></i></div>
 
-    <!-- scroll to up -->
-    <div class="scrollup"><i class="fas fa-angle-double-up"></i></div>
+  <!-- Javascript Files -->
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/slick.min.js"></script>
+  <script src="assets/js/vendor/counterup.min.js"></script>
+  <script src="assets/js/vendor/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+  <script src="assets/js/vendor/waypoints.min.js"></script>
+  <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/vendor/easing.min.js"></script>
+  <script src="assets/js/vendor/placeholderTypewriter.js"></script>
+  <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
-    <!-- Javascript Files -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/counterup.min.js"></script>
-    <script src="assets/js/vendor/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="assets/js/vendor/waypoints.min.js"></script>
-    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/vendor/easing.min.js"></script>
-    <script src="assets/js/vendor/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script>
+    $('#addrs').placeholderTypewriter({ text: ["Where would you like to go?", "Amsterdam?", "Paris?", "Berlin?", "London?", "New York?", "San Francisco?"] });
+    $('#addrs').placeholderTypewriter({
+      // delay between characters
+      delay: 50,
+      // delay between text
+      pause: 1000,
+    });
+  </script>
+</body>
+
 </html>

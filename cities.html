@@ -48,11 +48,15 @@
                 <div class="col-12 col-sm-8 col-md-8">
                     <ul class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center">
                         <!-- language switcher -->
-                        <li class="language-swithcer upper-menu-list">
+                        <!-- <li class="language-swithcer upper-menu-list">
                             <a class="text-uppercase link active" href="#">en</a>
                             <span>|</span>
                             <a class="text-uppercase link" href="#">bn</a>
-                        </li>
+                        </li> -->
+                        <select class="language-swithcer upper-menu-list">
+                            <option value="1">EN</option>
+                            <option value="2">BN</option>
+                        </select>
                         <!-- separator -->
                         <span class="menu-divider">|</span>
                         <!-- profile -->
@@ -60,9 +64,9 @@
                             <span class="user-icon"><i class="fas fa-user"></i></span>
                             <a class="link" href="#">Tonmoy</a>
                             <ul class="submenu">
-                                <li><a class="link" href="#">abc</a></li>
-                                <li><a class="link" href="#">abc</a></li>
-                                <li><a class="link" href="#">abc</a></li>
+                                <li><a class="link" href="#">menu 1</a></li>
+                                <li><a class="link" href="#">menu 2</a></li>
+                                <li><a class="link" href="#">menu 3</a></li>
                             </ul>
                         </li>
                         <!-- separator -->
@@ -80,11 +84,9 @@
     </header>
 
     <!-- hero section -->
-    <div class="hero-section breadcrumb-section" style="background-image: url('./assets/images/bg2.png');">
-        <img src="assets/images/hero-img2.png" class="vecc1" alt="">
-        <img src="assets/images/hero-img3.png" class="vecc2" alt="">
-
-        <!-- done -->
+    <div class="hero-section" style="background-image: url('./assets/images/bg1.png');">
+        <img src="assets/images/hero-img1.png" class="main-hero-img" alt="">
+        <img src="assets/images/hvec1.png" class="vec1 item-bounce" alt="">
         <img src="assets/images/hvec2.png" class="vec2" alt="">
         <div class="container">
             <div class="row justify-content-center">
@@ -462,8 +464,20 @@
     <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/placeholderTypewriter.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#addrs').placeholderTypewriter({ text: ["Where would you like to go?", "Amsterdam?", "Paris?", "Berlin?", "London?", "New York?", "San Francisco?"] });
+        $('#addrs').placeholderTypewriter({
+            // delay between characters
+            delay: 50,
+            // delay between text
+            pause: 1000,
+        });
+    </script>
 </body>
 
 </html>

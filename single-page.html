@@ -47,12 +47,10 @@
                 </div>
                 <div class="col-12 col-sm-8 col-md-8">
                     <ul class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center">
-                        <!-- language switcher -->
-                        <li class="language-swithcer upper-menu-list">
-                            <a class="text-uppercase link active" href="#">en</a>
-                            <span>|</span>
-                            <a class="text-uppercase link" href="#">bn</a>
-                        </li>
+                        <select class="language-swithcer upper-menu-list">
+                            <option value="1">EN</option>
+                            <option value="2">BN</option>
+                        </select>
                         <!-- separator -->
                         <span class="menu-divider">|</span>
                         <!-- profile -->
@@ -60,9 +58,9 @@
                             <span class="user-icon"><i class="fas fa-user"></i></span>
                             <a class="link" href="#">Tonmoy</a>
                             <ul class="submenu">
-                                <li><a class="link" href="#">abc</a></li>
-                                <li><a class="link" href="#">abc</a></li>
-                                <li><a class="link" href="#">abc</a></li>
+                                <li><a class="link" href="#">menu 1</a></li>
+                                <li><a class="link" href="#">menu 2</a></li>
+                                <li><a class="link" href="#">menu 3</a></li>
                             </ul>
                         </li>
                         <!-- separator -->
@@ -91,6 +89,14 @@
                     </div>
 
                     <div class="container pt-100">
+                        <!-- filter button -->
+
+                        <div class="filter-btns d-flex mb-4">
+                            <button class="btn btn1 mr-4">burger</button>
+                            <button class="btn btn1 mr-4">pizza</button>
+                            <button class="btn btn1 mr-4">juice</button>
+                        </div>
+
                         <div class="res-food-info">
                             <!-- res food info -->
                             <div class="row">
@@ -163,6 +169,8 @@
                                                 Tk 98
                                                 <del>Tk 110</del>
                                             </span>
+                                            <button class="btn-sm btn-outline-danger btn d-block mt-3">add to
+                                                cart</button>
                                         </div>
                                         <div class="content-right">
                                             <img src="assets/images/s1.png" class="items-img" alt="">
@@ -180,6 +188,8 @@
                                                 Tk 98
                                                 <del>Tk 110</del>
                                             </span>
+                                            <button class="btn-sm btn-outline-danger btn d-block mt-3">add to
+                                                cart</button>
                                         </div>
                                         <div class="content-right">
                                             <img src="assets/images/s1.png" class="items-img" alt="">
@@ -350,6 +360,7 @@
         </div>
     </footer>
 
+
     <!-- scroll to up -->
     <div class="scrollup"><i class="fas fa-angle-double-up"></i></div>
 
@@ -363,8 +374,20 @@
     <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/placeholderTypewriter.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#addrs').placeholderTypewriter({ text: ["Where would you like to go?", "Amsterdam?", "Paris?", "Berlin?", "London?", "New York?", "San Francisco?"] });
+        $('#addrs').placeholderTypewriter({
+            // delay between characters
+            delay: 50,
+            // delay between text
+            pause: 1000,
+        });
+    </script>
 </body>
 
 </html>
