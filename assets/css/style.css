@@ -1362,10 +1362,21 @@ nav {
       border: 1px solid #ffffff !important;
       color: #ffffff !important; }
 
-.contact-section {
-  padding-top: 145px;
-  padding-bottom: 145px;
-  background: #fff5f3; }
+
+.contact-section-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+  border-radius: 50px;
+}
+.contact-section-bg h2{
+  color: #fff;
+  padding: 2rem;
+}
+.contact-section-bg .btn1 {
+  background-color: #fff;
+}
   @media (max-width: 767.98px) {
     .contact-section {
       padding-top: 90px;
