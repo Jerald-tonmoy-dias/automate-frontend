@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Automatefood - invoice</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awsome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
+</head>
+
+<body>
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header-area position-relative pb-4">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div
+                    class="col-12 col-sm-4 col-md-4 mb-4 mb-sm-0 d-flex justify-content-center justify-content-sm-start ">
+                    <img src="assets/images/logo.png" class="logo" alt="">
+                </div>
+                <div class="col-12 col-sm-8 col-md-8">
+                    <ul class="d-flex justify-content-center justify-content-sm-end upper-menu align-items-center">
+                        <select class="language-swithcer upper-menu-list">
+                            <option value="1">EN</option>
+                            <option value="2">BN</option>
+                        </select>
+                        <!-- separator -->
+                        <span class="menu-divider">|</span>
+                        <!-- profile -->
+                        <li class="has-submenu upper-menu-list">
+                            <span class="user-icon"><i class="fas fa-user"></i></span>
+                            <a class="link" href="#">Tonmoy</a>
+                            <ul class="submenu">
+                                <li><a class="link" href="#">menu 1</a></li>
+                                <li><a class="link" href="#">menu 2</a></li>
+                                <li><a class="link" href="#">menu 3</a></li>
+                            </ul>
+                        </li>
+                        <!-- separator -->
+                        <span class="menu-divider">|</span>
+                        <!-- cart option -->
+                        <li class="upper-menu-list"> <a href="#" class="link position-relative">
+                                <span class="cart_counter">0</span>
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </li>
+                        <!-- separator -->
+                        <span class="menu-divider">|</span>
+                        <!-- cart option -->
+                        <li class="upper-menu-list"> <a href="#" class="link position-relative">
+                                <span class="cart_counter">0</span>
+                                <i class="fas fa-shopping-basket"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-section" style="background-image: url('./assets/images/customer-dashboard.jpg');">
+        <div class="container-fluid">
+            <div class="row align-items-stretch">
+                <!-- left side -->
+                <div class="col-lg-4 h-100 mb-4 mb-lg-0">
+                    <div class="profile-card position-relative">
+                        <span class="profile-overlay"></span>
+                        <img class="customer-img" src="./assets/images/customer.png" alt="user">
+                        <h4 class="text-center mt-4 customer-name">tonmoy khan</h4>
+                        <span class="text-center mt-2 customer-desig">cutomer</span>
+                        <!-- profile nav -->
+                        <ul class="nav flex-column mt-4">
+                            <li class="nav-item">
+                                <a href="customer-profile.html"
+                                    class="nav-link customer-profile-nav align-items-center">
+                                    <i class="fas fa-user-circle"></i>
+                                    Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="my-order-list.html" class="nav-link customer-profile-nav active">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    My orders
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="col-lg-8 h-100">
+
+                    <div class="profile-details order-table-detials position-relative">
+
+                        <h4 class="mb-4 pb-30 order-title">invoice: #2021254</h4>
+                        <hr class="custome-hr custome-hr-2">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!-- item summary -->
+                                <table id="table_id" class="display customer-order-table">
+                                    <thead class="order-table-head">
+                                        <tr>
+                                            <th>Item Summary</th>
+                                            <th>QTY</th>
+                                            <th>Price</th>
+                                            <th>Total Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="order-table-row">
+                                            <td class="d-flex align-items-center">
+                                                <img src="./assets/images/sm1.png" class="invoice-thumb" alt="">
+                                                <span class="text-capitalize d-inline-block ml-4">instant Burger</span>
+                                            </td>
+                                            <td>01</td>
+                                            <td>$50.00</td>
+                                            <td>$50.00</td>
+                                        </tr>
+                                        <tr class="order-table-row">
+                                            <td class="d-flex align-items-center">
+                                                <img src="./assets/images/sm1.png" class="invoice-thumb" alt="">
+                                                <span class="text-capitalize d-inline-block ml-4">instant Burger</span>
+                                            </td>
+                                            <td>01</td>
+                                            <td>$50.00</td>
+                                            <td>$50.00</td>
+                                        </tr>
+                                        <tr class="order-table-row">
+                                            <td class="d-flex align-items-center">
+                                                <img src="./assets/images/sm1.png" class="invoice-thumb" alt="">
+                                                <span class="text-capitalize d-inline-block ml-4">instant Burger</span>
+                                            </td>
+                                            <td>1</td>
+                                            <td>$50.00</td>
+                                            <td>$50.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <!-- customer info -->
+                                <div class="customer-info-wrapper mt-4">
+                                    <h4 class="order-title mb-4">Customer & Order Details</h4>
+                                    <ul>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>customer name</span>
+                                            <span>Tonmoy Khan</span>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>Phone number</span>
+                                            <span>032167412</span>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>delevery address</span>
+                                            <span>uttara, dhaka</span>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>payment methods</span>
+                                            <span>COD</span>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>time to delivery</span>
+                                            <span>30min</span>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between info-list">
+                                            <span>branch</span>
+                                            <span>uttara</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- order summery -->
+                                <div class="customer-info-wrapper order-summery mb-4">
+                                    <h4 class="order-title mb-2">order summery</h4>
+                                    <ul>
+                                        <li
+                                            class="d-flex flex-wrap justify-content-between align-items-center summery-list">
+                                            <span class="text-capitalize d-block mt-2 font-weight-bold">order
+                                                created</span>
+                                            <span class="text-capitalize d-block mt-2">sun,Frb 7,2022</span>
+                                        </li>
+                                        <li
+                                            class="d-flex flex-wrap justify-content-between align-items-center summery-list">
+                                            <span class="text-capitalize d-block mt-2 font-weight-bold">order
+                                                time</span>
+                                            <span class="text-capitalize d-block mt-2">06:24pm</span>
+                                        </li>
+                                        <li
+                                            class="d-flex flex-wrap justify-content-between align-items-center summery-list">
+                                            <span class="text-capitalize d-block mt-2 font-weight-bold">subtotal</span>
+                                            <span class="text-capitalize d-block mt-2">$150.50</span>
+                                        </li>
+                                        <li
+                                            class="d-flex flex-wrap justify-content-between align-items-center summery-list">
+                                            <span class="text-capitalize d-block mt-2 font-weight-bold">delivery
+                                                fee</span>
+                                            <span class="text-capitalize d-block mt-2">$10.50</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- rattings -->
+                                <div class="customer-info-wrapper order-summery">
+                                    <h4 class="order-title mb-2">Rattings</h4>
+                                    <div class="d-flexs align-items-centers">
+
+                                        <form action="">
+
+                                            <span class="star-cb-group">
+                                                <input type="radio" id="rating-5" name="rating" value="5" /><label
+                                                    for="rating-5"></label>
+                                                <input type="radio" id="rating-4" name="rating" value="4"
+                                                    checked="checked" /><label for="rating-4"></label>
+                                                <input type="radio" id="rating-3" name="rating" value="3" /><label
+                                                    for="rating-3"></label>
+                                                <input type="radio" id="rating-2" name="rating" value="2" /><label
+                                                    for="rating-2"></label>
+                                                <input type="radio" id="rating-1" name="rating" value="1" /><label
+                                                    for="rating-1"></label>
+                                                <input type="radio" id="rating-0" name="rating" value="0"
+                                                    class="star-cb-clear" /><label for="rating-0"></label>
+                                            </span>
+
+                                            <textarea class="form-control review-text" placeholder="what is your view?"
+                                                rows="4">
+                                            </textarea>
+
+                                            <button class="btn1 review-btn mt-4">submit</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-area">
+            <div class="foo_top">
+                <div class="foo_top_shapes">
+                    <img src="assets/images/foo-vec.png" alt="" class="vec1">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="foo-widget">
+                                <div class="logo">
+                                    <a href="index.html"> <img src="assets/images/logo.png" alt=""></a>
+                                </div>
+                                <span class="clients-counter">500+</span>
+                                <p class="editable" data-cid="38" tabindex="1">Satisfied Clients Worldwide</p>
+                                <div class="social-links">
+                                    <a href="#"><span class="active"><i class="icofont-facebook"></i></span></a>
+
+                                    <a href="#"><span><i class="icofont-twitter"></i></span></a>
+
+                                    <a href="#"><span><i class="icofont-instagram"></i></span></a>
+
+                                    <a href="#"><span><i class="icofont-pinterest"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="foo-widget">
+                                <h6 class="mb-20 title editable" data-cid="39" tabindex="1">Information</h6>
+                                <ul>
+                                    <li><a href="#">about us</a> </li>
+                                    <li><a href="#">service</a> </li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">blog</a> </li>
+                                    <li><a href="#">privacy and policy</a> </li>
+                                    <li><a href="#">Terms & Conditions</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="foo-widget">
+                                <h6 class="mb-20 title editable" data-cid="40" tabindex="1">support</h6>
+                                <ul>
+                                    <li class="number">
+                                        <span class="wtsapp">
+                                            <i class="fab fa-whatsapp-square"></i>
+                                        </span>
+                                        +8801677-701493
+                                    </li>
+                                    <li class="fw-500">
+                                        website
+                                    </li>
+                                    <li>
+                                        softtechitsupport.com
+                                    </li>
+                                    <li class="fw-500">
+                                        email address
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fas fa-envelope-open-text mr-4"></i> support@softtechit.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foo_btm">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="copyright-text">
+                                <span class="editable" data-cid="7" tabindex="1"> Copyright &copy; 2022 <a
+                                        href="#"><b>Automatefood</b></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scroll to up -->
+    <div class="scrollup"><i class="fas fa-angle-double-up"></i></div>
+
+    <!-- Javascript Files -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/placeholderTypewriter.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="http://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#addrs').placeholderTypewriter({ text: ["Where would you like to go?", "Amsterdam?", "Paris?", "Berlin?", "London?", "New York?", "San Francisco?"] });
+        $('#addrs').placeholderTypewriter({
+            // delay between characters
+            delay: 50,
+            // delay between text
+            pause: 1000,
+        });
+
+        // data table
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+
+        // toggle password and icon
+        function togglePassword() {
+            let x = document.getElementById("Password");
+            let show = document.querySelector('.toggle-pass');
+
+            if (x.type === "password") {
+                x.type = "text";
+                show.classList.add('fa-eye-slash');
+            } else {
+                x.type = "password";
+                show.classList.remove('fa-eye-slash');
+            }
+        }
+
+        // toggle password and icon
+        function toggleconfirmPassword() {
+            let x = document.getElementById("ConfirmPassword");
+            let show = document.querySelector('.toggle-confirm-pass');
+
+            if (x.type === "password") {
+                x.type = "text";
+                show.classList.add('fa-eye-slash');
+            } else {
+                x.type = "password";
+                show.classList.remove('fa-eye-slash');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
