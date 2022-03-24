@@ -2424,3 +2424,82 @@ position: relative;
 .review-text {
   border: 1px solid #f6f7f9;
 }
+
+/* review page */
+.inner-ratings {
+  background: #fff5f3;
+  padding: 35px;
+  border-radius: 20px;
+}
+.inner-ratings .left-inner {
+  background-color: #fff;
+  text-align: center;
+  padding: 35px;
+  border-radius: 10px;
+}
+.inner-ratings .left-inner .rating-number {
+  font-size: 48px;
+  font-weight: 700;
+}
+.inner-ratings .left-inner .rating-number .total-ratings {
+  color: #cecece;
+  font-size: 30px;
+}
+.single-rating-progress-wrapper {
+  display: flex;
+  align-items: center;
+}
+.rating-star {
+  color: #feb93e;
+}
+.rating-star:hover {
+  color: #feb93e;
+  transform: scale(1.1);
+}
+.count-total-rating {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.progress-bar-rating {
+  width: 360px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.progress-bar-rating .progress {
+  height: 7px;
+  border-radius: 0;
+  background: #ffe4b4;
+}
+.progress-bar-rating .progress-bar {
+  height: 7px;
+  background-color: #feb93e;
+}
+.single-rating-progress-wrapper {
+  padding: 5px;
+}
+.automate_card-review {
+  align-items: center;
+}
+.automate_card-review .top-bar {
+  display: flex;
+  align-items: center;
+}
+.automate_card-review .rating-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.automate_card-review .rating-title:hover {
+  color: #e82d34;
+}
+.automate_card-review .verified {
+  text-transform: capitalize;
+}
+.automate_card-review .verified.colored-green {
+  color: #51be78;
+}
+.footer-background-color {
+  background-color: #fff5f3;
+}
